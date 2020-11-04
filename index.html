@@ -1,3 +1,8 @@
 <!DOCTYPE html><html><head><script>
+            function test(){
+            var params = new URLSearchParams(window.location.search);
+	var name = params.get('name');
+            window.parent[name]()
+            }
             
-          </script><script src="https://apis.google.com/js/client.js?onload=onGapiLoad"></script></head><body></body></html>
+          </script><script src="https://apis.google.com/js/client.js?onload=test"></script></head><body></body></html>
